@@ -25,7 +25,6 @@ main {
 }
 /* ------------ 
 Top banner start
-
 --------------- */
 .top-banner {
   display: flex;
@@ -82,19 +81,39 @@ World cup update and details
   display: flex;
 }
 .matches {
-  margin: 0px 10px;
+  margin: 10px 10px;
   border: 1px solid #73737320;
   border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 30px;
+  text-align: center;
+  margin: ;
 }
+.team {
+  display: flex;
+  justify-content: center;
+}
+.match-duration {
+  display: flex;
+  justify-content: center;
+}
+.matches p {
+  font-weight: 700;
+  margin: 20px;
+}
+/* .matches span {
+  font-weight: 700;
+  tab-size: 16px;
+  margin: 20px;
+  display: flex
+  flex-direction: column;
+  justify-content: center;
+} */
 .comments i {
   margin-left: 20px;
 }
 .world-cup-section {
   display: flex;
 }
-
 .match-category {
   display: flex;
   flex-direction: column;
@@ -116,10 +135,6 @@ World cup update and details
   border-radius: 10px;
   font-weight: 500;
   font-size: 20px;
-}
-.category-button a {
-  text-decoration: none;
-  color: black;
 }
 .button-blog {
   background-color: #929150;
@@ -169,6 +184,7 @@ footer
   margin: 50px;
   border: 1px solid #414141d8;
 }
+
 .social i {
   color: #929150;
   font-size: 20px;
@@ -195,14 +211,14 @@ Responsive design
     text-align: center;
   }
   .top-banner-left p {
-    font-size: 10px;
-    color: #ffff;
-    text-align: center;
-  }
-  .top-banner-left p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  .top-banner-left p {
+    font-size: 10px;
+    color: #ffff;
+    text-align: center;
   }
   .top-banner-img img {
     width: 100%;
@@ -246,10 +262,6 @@ Responsive design
     border: 1px solid #cbcaca61;
     background-color: #fff;
   }
-  .category-button a {
-    text-decoration: none;
-    color: black;
-  }
   .button-blog {
     background-color: #929150;
     color: #ffff;
@@ -267,10 +279,6 @@ Responsive design
   .container {
     width: 650px;
     margin-bottom: 30px;
-  }
-  .category-button a {
-    text-decoration: none;
-    color: black;
   }
   /* ------------ 
   Top banner start
@@ -322,14 +330,15 @@ Responsive design
     height: 50px;
     border-radius: 10px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     border: 1px solid #cbcaca61;
     background-color: #fff;
   }
+
   .button-blog {
     background-color: #929150;
     color: #ffff;
-    width: 170px;
+    /* width: 170px; */
   }
   .footer-menu {
     display: flex;
