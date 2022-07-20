@@ -80,6 +80,13 @@ World cup update and details
 .match-duration {
   display: flex;
 }
+.matches {
+  margin: 0px 10px;
+  border: 1px solid #73737320;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
 .comments i {
   margin-left: 20px;
 }
@@ -93,18 +100,235 @@ World cup update and details
   padding: 10px;
   border-radius: 10px;
   background-color: #161616;
-  height: 250px;
-  margin-right: 24px;
+  height: 240px;
+  margin-right: 2px;
+}
+.match-update {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
 }
 .category-button {
   padding: 15px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: 500;
   font-size: 20px;
 }
+.button-blog {
+  background-color: #dd0000;
+  color: #ffff;
+}
+.transfer button {
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 10px;
+}
+.match-duration {
+  color: rgb(22, 22, 22, 0.7);
+}
+/* --------------
+footer
+----------------- */
 
-.match-update {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.footer-container {
+  width: 100%;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+}
+.footer-menu {
+  display: flex;
+  margin-bottom: 100px;
+}
+.footer-menu h3 {
+  margin: 20px;
+  color: #ffff;
+  font-size: 16px;
+  color: #b9b9b9b9;
+}
+.footer h2 {
+  color: #ffff;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+.footer hr {
+  width: 90%;
+  margin: 50px;
+  border: 1px solid #414141d8;
+}
+
+/* ----------------
+Responsive design
+------------------ */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 220px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+  }
+  .top-banner {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-banner-left h1 {
+    font-size: 22px;
+    color: #ffff;
+    text-align: center;
+  }
+  .top-banner-left p {
+    font-size: 10px;
+    color: #ffff;
+    text-align: center;
+  }
+  .top-banner-img img {
+    width: 100%;
+    margin-left: 15px;
+  }
+  .top-banner-left button {
+    margin-left: 25px;
+  }
+  /* Upcomming match section responsive design */
+  .match-update {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .world-cup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .match-category {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 240px;
+    margin-right: 2px;
+  }
+  .match-update {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 10%;
+  }
+  .category-button {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid #cbcaca61;
+    background-color: #fff;
+  }
+  .button-blog {
+    background-color: #dd0000;
+    color: #ffff;
+  }
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-button {
+    display: none;
+  }
+}
+@media only screen and (min-width: 688px) and (max-width: 1000px) {
+  .container {
+    width: 650px;
+    margin-bottom: 30px;
+  }
+  /* ------------ 
+  Top banner start
+  --------------- */
+  .top-banner {
+    display: flex;
+    margin-top: 20px;
+  }
+  .top-banner-left h1 {
+    font-size: 30px;
+  }
+  .top-banner-left p {
+    font-size: 12px;
+  }
+  .top-banner-img img {
+    width: 250px;
+    margin-left: 10px;
+  }
+  /* blog for tablet */
+  .match-container {
+    width: 650px;
+  }
+  .match-update {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .world-cup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .match-update {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 20%;
+  }
+  .match-category {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 70px;
+    justify-content: center;
+  }
+
+  .category-button {
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid #cbcaca61;
+    background-color: #fff;
+  }
+  .button-blog {
+    background-color: #dd0000;
+    color: #ffff;
+    width: 170px;
+  }
+  .footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .last-match {
+    display: none;
+  }
+  .footer-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .footer-button button {
+    background-color: #dd0000;
+    padding: 10px 20px;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .footer-button {
+    display: none;
+  }
 }
