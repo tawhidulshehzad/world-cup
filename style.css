@@ -1,4 +1,110 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Poppins:wght@400;500&display=swap");
 /*-------------- 
 fonts
  --------------- */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Poppins:wght@400;500&display=swap");
+
+/* ------------ 
+Common Style
+--------------- */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  width: 1200px;
+  background-color: black;
+  padding: 0px 70px;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 90px;
+}
+/* ------------ 
+Top banner start
+--------------- */
+.top-banner {
+  display: flex;
+  margin-top: 20px;
+}
+.top-banner-left h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  color: #ffff;
+}
+.top-banner-left p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffff;
+}
+.top-banner-img img {
+  width: 581px;
+  margin-top: 30px;
+  position: relative;
+  transition: transform 0.5s;
+}
+.top-banner-img img:hover {
+  transform: scale(1.2);
+}
+
+.top-banner-left button {
+  background-color: #dd0000;
+  border-radius: 5px;
+  padding: 16px 25px;
+  color: #ffff;
+  font-size: 20px;
+  border: none;
+}
+.top-banner-left button i {
+  padding-left: 10px;
+}
+.top-banner-left button:hover {
+  background-color: #000000;
+  border: 2px solid #dd0000;
+  color: red;
+}
+/* ------------ 
+World cup update and details
+--------------- */
+.match-container {
+  width: 1321px;
+  border-radius: 15px;
+}
+.match-duration {
+  display: flex;
+}
+.comments i {
+  margin-left: 20px;
+}
+.world-cup-section {
+  display: flex;
+}
+.match-category {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #161616;
+  height: 250px;
+  margin-right: 24px;
+}
+.category-button {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.match-update {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
